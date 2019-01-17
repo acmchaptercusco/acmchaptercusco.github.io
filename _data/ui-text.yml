@@ -1,5 +1,25 @@
 # User interface text and labels
 
+# Spanish
+# -------
+es: &DEFAULT_ES
+  comments_label             : "Dejar un commentario"
+  comments_title             : "Comentar"
+  comment_form_info          : "Su dirección de correo no será publicada. Se han resaltado los campos requeridos"
+  comment_form_comment_label : "Comentario"
+  comment_form_md_info       : "Markdown está soportado."
+  comment_form_name_label    : "Nombre"
+  comment_form_email_label   : "Dirección de E-mail"
+  comment_form_website_label : "Sitio web (opcional)"
+  comment_btn_submit         : "Enviar Commentario"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "Gracias por su comentario!, Este se visualizará en el sitio una vez haya sido aprobado"
+  comment_error_msg          : "Lo sentimos, ha ocurrido un error al enviar su comentario. Por favor asegurese que todos los campos han sido diligenciados e intente de nuevo"
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
+
 # English (default)
 # -----------------
 en: &DEFAULT_EN
@@ -23,26 +43,6 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
-# Spanish
-# -------
-es: &DEFAULT_ES
-  comments_label             : "Dejar un commentario"
-  comments_title             : "Comentar"
-  comment_form_info          : "Su dirección de correo no será publicada. Se han resaltado los campos requeridos"
-  comment_form_comment_label : "Comentario"
-  comment_form_md_info       : "Markdown está soportado."
-  comment_form_name_label    : "Nombre"
-  comment_form_email_label   : "Dirección de E-mail"
-  comment_form_website_label : "Sitio web (opcional)"
-  comment_btn_submit         : "Enviar Commentario"
-  comment_btn_submitted      : "Enviado"
-  comment_success_msg        : "Gracias por su comentario!, Este se visualizará en el sitio una vez haya sido aprobado"
-  comment_error_msg          : "Lo sentimos, ha ocurrido un error al enviar su comentario. Por favor asegurese que todos los campos han sido diligenciados e intente de nuevo"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
 
 # French
 # ------
