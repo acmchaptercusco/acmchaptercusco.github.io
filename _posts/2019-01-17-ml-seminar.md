@@ -2,7 +2,7 @@
 layout: post
 title: Machine Learning Seminar
 subtitle: DEL 28 DE ENERO AL 1 DE FEBRERO
-bigimg: /img/ml-seminar.png
+bigimg: /img/ml-seminar.jpg
 tags: [machine learning, seminar]
 ---
 
