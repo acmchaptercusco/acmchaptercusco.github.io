@@ -12,11 +12,11 @@ Les dejamos aquí el cronograma:
 
 | Día  | Temas |
 | --- | --- |
-| 1 | **1. Introduction**<br>* Machine Learning foundations<br>* Toolkits and environment configuration<br>**2. Data Preparation**<br>* Data analysis (types, categories)<br>* Pre-processing (manual elimination, integration, sampling, unbalanced data, cleaning, transformation, dimension reduction)<br> **3. Predictive Models**<br>* Models based on distance (KNN) |
-| 2 | **4. Probabilistic Models**<br>* Naive Bayes<br>* Bayesian Networks<br>**5. Methods based on searching**<br>* Decision and regression trees<br>* Decision rules |
-| 3 | **6. Methods based on optimization**<br>* Neural Networks<br>* SVM (by Berthin Torres) 30min<br>**7. Graphical models**<br>* Architecture<br>* Markov Random Fields<br>* Conditional Random Fields |
-| 4 | **8. Multiple models**<br>* Ensemble models (cascade, hybrid-systems)<br>* Boosting and bagging<br>* Genetic Algorithms<br>**9. Evaluation**<br>* Error metrics<br>* Sampling (bootstrap, cross validation, holdout)<br>* Two-class problem and AUC<br>* Test of hypothesis<br>* Overfitting vs Underfitting |
-| 5 | **10. Deep learning**<br>* Introduction to Deep Learning<br>* Convolutional Neural Networks<br>* Sequence Modeling with Neural Networks<br>* Frameworks for DL |
+| 1 | **1. Introduction**<br> > * Machine Learning foundations<br> > * Toolkits and environment configuration<br>**2. Data Preparation**<br> > * Data analysis (types, categories)<br> > * Pre-processing (manual elimination, integration, sampling, unbalanced data, cleaning, transformation, dimension reduction)<br> **3. Predictive Models**<br> > * Models based on distance (KNN) |
+| 2 | **4. Probabilistic Models**<br> > * Naive Bayes<br> > * Bayesian Networks<br>**5. Methods based on searching**<br> > * Decision and regression trees<br> > * Decision rules |
+| 3 | **6. Methods based on optimization**<br> > * Neural Networks<br> > * SVM (by Berthin Torres) 30min<br>**7. Graphical models**<br> > * Architecture<br> > * Markov Random Fields<br> > * Conditional Random Fields |
+| 4 | **8. Multiple models**<br> > * Ensemble models (cascade, hybrid-systems)<br> > * Boosting and bagging<br> > * Genetic Algorithms<br>**9. Evaluation**<br> > * Error metrics<br> > * Sampling (bootstrap, cross validation, holdout)<br> > * Two-class problem and AUC<br> > * Test of hypothesis<br> > * Overfitting vs Underfitting |
+| 5 | **10. Deep learning**<br> > * Introduction to Deep Learning<br> > * Convolutional Neural Networks<br> > * Sequence Modeling with Neural Networks<br> > * Frameworks for DL |
 
 Las charlas están pensadas en cubrir los aspectos básicos de cada tema, por lo que no son necesarios conocimientos previos.  Además, se mostrará con ejemplos reales el uso y aplicación de las diferentes técnicas.
 
