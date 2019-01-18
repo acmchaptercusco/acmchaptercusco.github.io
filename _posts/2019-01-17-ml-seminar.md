@@ -29,3 +29,5 @@ Las charlas están pensadas en cubrir los aspectos básicos de cada tema, por lo
 * PhD. Student Rodolfo Quispe (UNICAMP)
 * M.Sc. Jhosimar Arias (UNICAMP)
 * M.Sc. Berthin Torres (UNICAMP)
+
+**Ingreso libre!**
