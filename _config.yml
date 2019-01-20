@@ -25,6 +25,7 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Sobre Nosotros: "about"
   Recursos:
+    - Certificados: "certificados"
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
