@@ -10,24 +10,4 @@ subtitle: Verifica tu certificado con su código
 	<div id="display"></div>
 </center>
 
-<script type="text/javascript">
-	function insert(){
-		fetch("../codes.json")
-			.then(function(response){
-				return response.json();
-			})
-			.then(function(myJson){
-				var codeInput = document.getElementById("code");
-				var messageBox = document.getElementById("display");
-				var emb1 = '<iframe src="';
-				var emb2 = '" width="1063" height="800" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
-				if(myJson[codeInput.value] !== undefined){
-					messageBox.innerHTML = "<font color="green">CÓDIGO VÁLIDO</font>\n"
-					messageBox.innerHTML += emb1 + myJson[codeInput.value] + emb2;
-				} else{
-					messageBox.innerHTML = "<font color="red">CÓDIGO INVÁLIDO</font>";
-				}
-				codeInput.value = "";
-			});
-	}
-</script>
+<script type="text/javascript"> function insert(){ fetch("../codes.json") .then(function(response){ return response.json(); }) .then(function(myJson){ var codeInput = document.getElementById("code"); var messageBox = document.getElementById("display"); var emb1 = '<iframe src="'; var emb2 = '" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>'; if(myJson[codeInput.value] !== undefined){ messageBox.innerHTML = "CÓDIGO VÁLIDO\n" messageBox.innerHTML += emb1 + myJson[codeInput.value] + emb2; } else{ messageBox.innerHTML = "CÓDIGO INVÁLIDO"; } codeInput.value = ""; }); } </script>
