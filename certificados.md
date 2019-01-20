@@ -20,7 +20,7 @@ subtitle: Verifica tu certificado por su código
 				var codeInput = document.getElementById("code");
 				var messageBox = document.getElementById("display");
 				var emb1 = '<iframe src="';
-				var emb2 = '" width="864" height="650" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
+				var emb2 = '" width="837" height="630" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
 				if(myJson[codeInput.value] !== undefined){
 					messageBox.innerHTML = "CÓDIGO VÁLIDO\n"
 					messageBox.innerHTML = emb1 + myJson[codeInput.value] + emb2;
