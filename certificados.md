@@ -23,7 +23,7 @@ subtitle: Verifica tu certificado por su código
 				var emb2 = '" width="837" height="630" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
 				if(myJson[codeInput.value] !== undefined){
 					messageBox.innerHTML = "CÓDIGO VÁLIDO\n"
-					messageBox.innerHTML = emb1 + myJson[codeInput.value] + emb2;
+					messageBox.innerHTML += emb1 + myJson[codeInput.value] + emb2;
 				} else{
 					messageBox.innerHTML = "CÓDIGO INVÁLIDO";
 				}
