@@ -22,10 +22,10 @@ subtitle: Verifica tu certificado por su código
 				var emb1 = '<iframe src="';
 				var emb2 = '" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
 				if(myJson[codeInput.value] !== undefined){
-					messageBox.innerHTML = "CÓDIGO VÁLIDO\n"
-					messageBox.innerHTML += emb1 + myJson[codeInput.value] + emb2;
+					//messageBox.innerHTML = "CÓDIGO VÁLIDO\n"
+					messageBox.innerHTML = emb1 + myJson[codeInput.value] + emb2;
 				} else{
-					messageBox.innerHTML = "CÓDIGO INVÁLIDO";
+					//messageBox.innerHTML = "CÓDIGO INVÁLIDO";
 				}
 				codeInput.value = "";
 			});
