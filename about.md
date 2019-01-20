@@ -1,18 +1,15 @@
 ---
 layout: page
 title: Sobre nosotros
-subtitle: Por qué deberías unirte...
 ---
 
-Somos bla bla bla... YUNSAAC...
+Somos un Círculo de Estudios de la Escuela Profesional de Ingeniería Informática y de Sistemas de la Universidad Nacional de San Antonio Abad del Cusco en Perú.
 
-My name is Inigo Montoya. I have the following qualities:
+Nuestro enfoque, como círculo de estudios, es la investigación y organización de eventos relacionados con esta. Promovemos la cultura de trabajo en equipo y competitiva organizando un concurso de programación cada semestre en el que los competidores pueden ganar numerosos premios. También, cada año organizamos muchos eventos incluyendo:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+* Charla al cachimbo informático
+* Todos Vuelven
+* La Hora del Código
+* Cursos relacionados con informática
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Siempre estamos a la búsqueda de nuevos miembros, sin importar la experiencia que tengan. Todos estamos para compartir y adquirir conocimiento.
