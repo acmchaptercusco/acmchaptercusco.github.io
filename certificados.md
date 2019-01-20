@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Certificados
-subtitle: Verifica tu certificado por su código
+subtitle: Verifica tu certificado con su código
 ---
 <center>
 	<input id="code" type="text">
@@ -20,12 +20,12 @@ subtitle: Verifica tu certificado por su código
 				var codeInput = document.getElementById("code");
 				var messageBox = document.getElementById("display");
 				var emb1 = '<iframe src="';
-				var emb2 = '" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
+				var emb2 = '" width="1063" height="800" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
 				if(myJson[codeInput.value] !== undefined){
-					messageBox.innerHTML = "CÓDIGO VÁLIDO\n"
+					messageBox.innerHTML = "<font color="green">CÓDIGO VÁLIDO</font>\n"
 					messageBox.innerHTML += emb1 + myJson[codeInput.value] + emb2;
 				} else{
-					messageBox.innerHTML = "CÓDIGO INVÁLIDO";
+					messageBox.innerHTML = "<font color="red">CÓDIGO INVÁLIDO</font>";
 				}
 				codeInput.value = "";
 			});
