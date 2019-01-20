@@ -3,7 +3,7 @@ layout: page
 title: Contáctanos
 subtitle: Donde, Como y Cuando buscarnos
 ---	
-![](img/contactanos.png)
+![](img/contactanos.jpg)
 
 * Email: acm.studentchapter.unsaac@gmail.com
 * Facebook: https://www.facebook.com/ACMUNSAAC
