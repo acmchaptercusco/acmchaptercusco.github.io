@@ -21,7 +21,11 @@ subtitle: Verifica tu certificado por su código
 				var messageBox = document.getElementById("display");
 				var emb1 = '<iframe src="';
 				var emb2 = '" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>';
-				messageBox.innerHTML = emb1 + myJson[codeInput.value] + emb2;
+				if(myJson[codeInput.value] !== undefined){
+					messageBox.innerHTML = emb1 + myJson[codeInput.value] + emb2;
+				} else{
+					messageBox.innerHTML = "CÓDIGO INVÁLIDO";
+				}
 				codeInput.value = "";
 			});
 	}
