@@ -30,4 +30,5 @@ Las charlas están pensadas en cubrir los aspectos básicos de cada tema, por lo
 * M.Sc. Jhosimar Arias (UNICAMP)
 * M.Sc. Berthin Torres (UNICAMP)
 
-**Ingreso libre!**
+{: .box-note}
+**Nota:** Ingreso libre! No es necesario traer portátiles. Se darán certificados digitales.

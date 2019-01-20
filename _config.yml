@@ -17,7 +17,7 @@ baseurl: ""
 title: ACM Chapter Cusco
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: An ACM Studentchapter
 
 # --- Navigation bar options --- #
 
@@ -56,9 +56,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+# navbar-img: "/img/us.jpg"
+# footer-img: "/img/us.jpg"
+# page-img: "/img/us.jpg"
 
 # --- Footer options --- #
 
@@ -75,7 +75,7 @@ social-network-links:
 #  rss: true
   email: "acm.studentchapter.unsaac@gmail.com"
   facebook: ACMUNSAAC
-#  github: acmchaptercusco
+  github: acmchaptercusco
 #  twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
@@ -86,29 +86,29 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: (+51) 983-738233
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
 
 # Select which share links to show in posts
 share-links-active:
-#  twitter: true
+  twitter: true
   facebook: true
-#  google: false
+#  google: true
 #  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-#url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-132854022-1"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-132854022-1"
 
 # Google Tag Manager ID
 #gtm: ""
