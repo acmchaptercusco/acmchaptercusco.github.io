@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Contactanos
-subtitle: Donde, como y cuando Buscarnos
+title: Contáctanos
+subtitle: Donde, Como y Cuando buscarnos
 ---	
-Email: acm.studentchapter.unsaac@gmail.com
-Facebook: https://www.facebook.com/ACMUNSAAC
-WhatsApp: (proximamente)
-Dirección: UNSAAC 4to piso pabellon Ing Informatica y de sistemas, salon 428.
+![](contactanos.png)
+
+*Email: acm.studentchapter.unsaac@gmail.com
+*Facebook: https://www.facebook.com/ACMUNSAAC
+*WhatsApp: (proximamente)
+*Dirección: UNSAAC 4to piso pabellon Ing. Informática y de sistemas, salon 428. Cusco, Peru.
