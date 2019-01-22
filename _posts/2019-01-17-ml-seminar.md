@@ -21,6 +21,7 @@ Les dejamos aquí el cronograma:
 Las charlas están pensadas en cubrir los aspectos básicos de cada tema, por lo que no son necesarios conocimientos previos.  Además, se mostrará con ejemplos reales el uso y aplicación de las diferentes técnicas.
 
 **Lugar**: Auditorio del 4to piso de Informática - UNSAAC
+
 **Hora**: 5pm a 7pm
 
 **Ponentes**:
