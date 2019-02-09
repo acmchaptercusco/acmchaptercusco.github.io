@@ -2,7 +2,7 @@
 layout: post
 title: CusContest XV
 subtitle: 8 DE FEBRERO
-bigimg: /img/banner-cuscontest.png
+bigimg: /img/ml-seminar.png
 tags: [cuscontest]
 ---
 

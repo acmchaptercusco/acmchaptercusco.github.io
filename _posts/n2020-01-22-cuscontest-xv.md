@@ -6,6 +6,14 @@ bigimg: /img/ml-seminar.png
 tags: [cuscontest]
 ---
 
+# Scoreboard
+### General
+### Principiantes
+### Intermedios
+### Avanzados
+
+# Problemset
+
 ### Problem G. El viaje de Adam <a id="Problem-G"/>
 
 * Dadas $$N+1$$ ciudades y sea $$A=\{a_1, a_2, \dots, a_N \}$$ un conjunto tal que $$a_i$$ indica el número de caminos de la $$i$$-ésima ciudad a la ciudad $$i+1$$. El problema nos piden contar el número de caminos posibles que hay desde la ciudad $$1$$ hasta la ciudad $$N+1$$, sin embargo dado que dicho número puede ser muy grande ($$10^{9000}$$ en el peor de los casos), sólo debemos de mostrar el primer y último dígito.
