@@ -375,7 +375,51 @@ for _ in range(t):
 
 
 	</details>
-* **Solución:**
+* **Solución 1:**
+    El problema se puede resolver usando backtracking con memorización dados los limites pequeños. Sea $$solve(up, down, opt)$$ una función que reciba busque cuantas combinaciones se pueden lograr con $$up$$ movimientos hacia arriba, $$down$$ movimientos hacia abajo, y $$opt$$ nos indique si debemos ir hacia arriba o hacia abajo. Entonces; si, por ejemplo, $$up=5,~ opt=True$$ quiere decir que podemos subir $$k$$ niveles, donde $$k$$ varia entre $$1$$ y $$5$$ niveles. Luego, como hemos subido debemos de bajar un numero similar de niveles, entonces llamaremos a la funcion $$solve(up - k, down + k, False)$$. Similarmente, el mismo procedimiento funciona cuando descendemos. Finalmente, el caso base queda definido cuando $$up$$ y $$down$$ son iguales a $$0$$ (indicando que ya no hay energia suficiente ni para subir o bajar.
+
+    Por lo tanto, nuestra funcion queda como:
+    
+    $$
+    solve(up, down, opt) = \left\{\begin{matrix}
+    up==0 \& down == 0&, &1 &//&~ Caso~ base\\
+    opt  == True&, & \sum_{i=1}^{up}{solve(up - i, down + i, False)} &//&~ Caso~ recursivo\\ 
+    opt ==  False&, & \sum_{i=1}^{down}{solve(up, down - i, True)} &//&~ Caso~ recursivo
+    \end{matrix}\right.
+    $$
+
+	El unico punto a considerar ahora es ir guardando los resultados previamente calculados en un array tri-dimensional o un diccionario. Al usar memorizacion, nos evitamos de realizar calculos que ya hayamos hecho previamente.
+
+* **Código en Python** *
+
+```python
+memo = dict()
+
+def solve(up, down, opt):
+    if up == down == 0:
+        return 1
+
+    if (up, down, opt) in memo:
+        return memo[(up, down, opt)]
+
+    ans = 0
+    if opt:
+        ans = sum(solve(up - i, down + i, not opt)
+                  for i in range(1, up + 1))
+    else:
+        ans = sum(solve(up, down - i, not opt)
+                  for i in range(1, down + 1))
+
+    memo[(up, down, opt)] = ans
+    return ans
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    print (solve(n, 0, True))
+```
+
+* **Solución 2:**
 	
 	La solución al problema para cada $$n$$ es igual a su [Número de Catalan](https://es.wikipedia.org/wiki/N%C3%BAmeros_de_Catalan): $$Cat(n)$$. La definición original es:
 
