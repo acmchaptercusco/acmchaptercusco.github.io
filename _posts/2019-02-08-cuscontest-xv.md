@@ -102,7 +102,6 @@ def convertPosition(position):
     row = ord(position[0]) - ord('A') + 1
     col = int(position[1])
     return (row, col)
-
 num_casos = int(input())
 for ith_caso in range(1, 1 + num_casos):
     n = int(input())
@@ -117,10 +116,8 @@ for ith_caso in range(1, 1 + num_casos):
             white_king = convertPosition(position)
         else:
             black_king = convertPosition(position)
-
     num_checks = max(abs(white_king[0] - black_king[0]),
                      abs(white_king[1] - black_king[1])) == 1
-
     for bishop in bishops:
         if abs(bishop[0] - white_king[0]) == abs(bishop[1] - white_king[1]):
             if (bishop[0] - black_king[0]) == (black_king[0] - white_king[0]) and \
@@ -128,7 +125,6 @@ for ith_caso in range(1, 1 + num_casos):
                 continue
             else:
                 num_checks += 1
-
     print ('Caso #%d: %s' % (ith_caso, 'Si' if num_checks > 0 else 'No'))
 ```
 
