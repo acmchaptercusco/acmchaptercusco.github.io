@@ -73,7 +73,7 @@ for ith_caso in range(1, 1 + num_casos):
 * **Solución:**
     Pueda que al inicio el problema parezca uno de simulaci\'on donde se deba inferir la energ\'ia inicial para recorrer todo el trayecto. Sin embargo, dado que para bajadas Jarencio gana puntos de energ\'ia, s\'olo debemos de preocuparnos de las subidas.
 
-    Despu\'es de subir a un punto alto se habr\'a gastado $K$ de energ\'ia, y de alli se pueden tomar dos decisiones: a) Subir a un punto m\'as alto, o b) Descender a un punto bajo donde se gane energ\'ia. Si el caso a) llega a pasar, el valor inicial de energ\'ia que Jarencio debe de tener necesita ser aumentado, si el caso b) ocurre, simplemente el valor inicial de energ\'ia queda sin modificaci\'on. Similarmente, se puede tomar la misma decisi\'on para cada punto de tal forma que, para generalizar, la respuesta ser\'a la diferencia entre el punto m\'as elevado y el punto inicial de Jarencio.
+    Despu\'es de subir a un punto alto se habr\'a gastado $$K$$ de energ\'ia, y de alli se pueden tomar dos decisiones: a) Subir a un punto m\'as alto, o b) Descender a un punto bajo donde se gane energ\'ia. Si el caso a) llega a pasar, el valor inicial de energ\'ia que Jarencio debe de tener necesita ser aumentado, si el caso b) ocurre, simplemente el valor inicial de energ\'ia queda sin modificaci\'on. Similarmente, se puede tomar la misma decisi\'on para cada punto de tal forma que, para generalizar, la respuesta ser\'a la diferencia entre el punto m\'as elevado y el punto inicial de Jarencio.
 * **Código en Python**
 ```python
 num_casos = int(input())
@@ -137,7 +137,7 @@ for ith_caso in range(1, 1 + num_casos):
 
 	</details>
 * **Solución:**
-	Dados los límites del problema, es suficiente implementar el algoritmo *naive*. Complejidad: $O(n^2)$.
+	Dados los límites del problema, es suficiente implementar el algoritmo *naive*. Complejidad: $$O(n^2)$$.
 * **Código en Python**
 ```python
 # Importar la librería math que contiene la
@@ -169,21 +169,21 @@ for _ in range(t):
 
 	</details>
 * **Solución:**
-	El algoritmo utilizado en la versión fácil es muy lento para la versión difícil. En este caso, es útil visualizar el doble ciclo mediante una matriz (supongamos que $n = 5$):
+	El algoritmo utilizado en la versión fácil es muy lento para la versión difícil. En este caso, es útil visualizar el doble ciclo mediante una matriz (supongamos que $$n = 5$$):
 
 	| | 1 | 2 | 3 | 4 | 5 |
 	| :---: | :---: | :---: | :---: | :---: | :---: |
-	| **1** | $\text{mcd}(1, 1)$ | $\text{mcd}(1, 2)$ | $\text{mcd}(1, 3)$ | $\text{mcd}(1, 4)$ | $\text{mcd}(1, 5)$ |
-	| **2** | $\text{mcd}(2, 1)$ | $\text{mcd}(2, 2)$ | $\text{mcd}(2, 3)$ | $\text{mcd}(2, 4)$ | $\text{mcd}(2, 5)$ |
-	| **3** | $\text{mcd}(3, 1)$ | $\text{mcd}(3, 2)$ | $\text{mcd}(3, 3)$ | $\text{mcd}(3, 4)$ | $\text{mcd}(3, 5)$ |
-	| **4** | $\text{mcd}(4, 1)$ | $\text{mcd}(4, 2)$ | $\text{mcd}(4, 3)$ | $\text{mcd}(4, 4)$ | $\text{mcd}(4, 5)$ |
-	| **5** | $\text{mcd}(5, 1)$ | $\text{mcd}(5, 2)$ | $\text{mcd}(5, 3)$ | $\text{mcd}(5, 4)$ | $\text{mcd}(5, 5)$ |
+	| **1** | $$\text{mcd}(1, 1)$$ | $$\text{mcd}(1, 2)$$ | $$\text{mcd}(1, 3)$$ | $$\text{mcd}(1, 4)$$ | $$\text{mcd}(1, 5)$$ |
+	| **2** | $$\text{mcd}(2, 1)$$ | $$\text{mcd}(2, 2)$$ | $$\text{mcd}(2, 3)$$ | $$\text{mcd}(2, 4)$$ | $$\text{mcd}(2, 5)$$ |
+	| **3** | $$\text{mcd}(3, 1)$$ | $$\text{mcd}(3, 2)$$ | $$\text{mcd}(3, 3)$$ | $$\text{mcd}(3, 4)$$ | $$\text{mcd}(3, 5)$$ |
+	| **4** | $$\text{mcd}(4, 1)$$ | $$\text{mcd}(4, 2)$$ | $$\text{mcd}(4, 3)$$ | $$\text{mcd}(4, 4)$$ | $$\text{mcd}(4, 5)$$ |
+	| **5** | $$\text{mcd}(5, 1)$$ | $$\text{mcd}(5, 2)$$ | $$\text{mcd}(5, 3)$$ | $$\text{mcd}(5, 4)$$ | $$\text{mcd}(5, 5)$$ |
 
-	El objetivo es obtener la suma $\sum_{i=1}^n \sum_{j=1}^n \text{mcd}(i, j)$. Dado que esta es una matriz simétrica, podemos deshacernos de la parte inferior. Los elementos de la diagonal tienen la forma de $\text{mcd}(i, i)$, siendo su valor $i$. Esto nos deja con la parte superior a la diagonal. A partir de ahora se considerará únicamente esta. Si tomamos la suma sobre una columna $m > 1$, esta es $\sum_{i=1}^{m-1} \text{mcd}(i, m)$. Nótese que esta suma está compuesta por divisores de $m$ que se irán repitiendo. Por lo tanto, esta se puede reescribir como $\sum_{d \mid m} d\times f(m, d)$ donde $f(m, d)$ indica la cantidad de valores desde $1$ hasta $m-1$ tal que su máximo común divisor con $m$ sea $d$. Esta función puede ser definida en términos de la [Función $\varphi$ de Euler](https://es.wikipedia.org/wiki/Funci%C3%B3n_%CF%86_de_Euler), que cuenta para un  entero $n$, la cantidad de valores desde $1$ hasta $n$ que son coprimos con $n$ (su máximo común divisor es $1$).
+	El objetivo es obtener la suma $$\displaystyle \sum_{i=1}^n \sum_{j=1}^n \text{mcd}(i, j)$$. Dado que esta es una matriz simétrica, podemos deshacernos de la parte inferior. Los elementos de la diagonal tienen la forma de $$\text{mcd}(i, i)$$, siendo su valor $$i$$. Esto nos deja con la parte superior a la diagonal. A partir de ahora se considerará únicamente esta. Si tomamos la suma sobre una columna $$m > 1$$, esta es $$\displaystyle \sum_{i=1}^{m-1} \text{mcd}(i, m)$$. Nótese que esta suma está compuesta por divisores de $$m$$ que se irán repitiendo. Por lo tanto, esta se puede reescribir como $$\displaystyle \sum_{d \mid m} d\times f(m, d)$$ donde $$f(m, d)$$ indica la cantidad de valores desde $$1$$ hasta $$m-1$$ tal que su máximo común divisor con $$m$$ sea $$d$$. Esta función puede ser definida en términos de la [Función $$\varphi$$ de Euler](https://es.wikipedia.org/wiki/Funci%C3%B3n_%CF%86_de_Euler), que cuenta para un  entero $$n$$, la cantidad de valores desde $$1$$ hasta $$n$$ que son coprimos con $$n$$ (su máximo común divisor es $$1$$).
 
-	**Ejercicio:** Demostrar que $f(n, k) = \varphi(\frac{n}{k})$ para enteros positivos $k, n$ con $k\mid n$.
+	**Ejercicio:** Demostrar que $$f(n, k) = \varphi(\frac{n}{k})$$ para enteros positivos $$k, n$$ con $$k\mid n$$.
 
-	Con esto, la suma queda como $\sum_{d \mid m} d \varphi(\frac{m}{d})$. Es necesario calcular esta cantidad para cada columna. La función $\varphi$ puede ser precalculada para todos los valores $\leq n$ con una versión extendida de la [Criba de Eratóstenes](https://es.wikipedia.org/wiki/Criba_de_Erat%C3%B3stenes). Complejidad: Preprocesamiento: $O(n\log \log n)$, Consulta: $O(1)$.
+	Con esto, la suma queda como $$\displaystyle \sum_{d \mid m} d \varphi(\frac{m}{d})$$. Es necesario calcular esta cantidad para cada columna. La función $$\varphi$$ puede ser precalculada para todos los valores $$\leq n$$ con una versión extendida de la [Criba de Eratóstenes](https://es.wikipedia.org/wiki/Criba_de_Erat%C3%B3stenes). Complejidad: Preprocesamiento: $$O(n\log \log n)$$, Consulta: $$O(1)$$.
 * **Código en C++**
 ```c++
 #include <bits/stdc++.h>
@@ -284,11 +284,11 @@ for _ in range(n):
 	</details>
 * **Solución:**
 
-    Duplicar el número de Scooby Galletas $S$ en cada hora y solo aplicar la resta modular cuando la cantidad actual de $S$  sea mayor o igual a la cantidad máxima de galletas que Shaggy pueda requerir ($2^{60}$). Esto debido a que, además de evitar el overflow, si antes de duplicar el valor de $S$ en la $i$-ésima hora, $S$ es $\geq 2^{60}$, al duplicarlo, $S$ sería $> 2^{60}$ y de esta forma sin importar el valor de los siguientes $c_i$, $S$ nunca llegaría a ser un número negativo, porque en las siguientes horas su valor continuaría duplicándose. De esta forma Shaggy no tendrá que exclamar *zoinks!*.
+    Duplicar el número de Scooby Galletas $$S$$ en cada hora y solo aplicar la resta modular cuando la cantidad actual de $$S$$  sea mayor o igual a la cantidad máxima de galletas que Shaggy pueda requerir ($$2^{60}$$). Esto debido a que, además de evitar el overflow, si antes de duplicar el valor de $$S$$ en la $$i$$-ésima hora, $$S$$ es $$\geq 2^{60}$$, al duplicarlo, $$S$$ sería $$> 2^{60}$$ y de esta forma sin importar el valor de los siguientes $$c_i$$, $$S$$ nunca llegaría a ser un número negativo, porque en las siguientes horas su valor continuaría duplicándose. De esta forma Shaggy no tendrá que exclamar *zoinks!*.
  
-    Si el caso anterior no se da, continuar duplicando el valor de $S$ y realizar la resta estándar entre $S$ y $c_i$ y verificar si el resultado es negativo.
+    Si el caso anterior no se da, continuar duplicando el valor de $$S$$ y realizar la resta estándar entre $$S$$ y $$c_i$$ y verificar si el resultado es negativo.
     
-    Finalmente la complejidad del algoritmo para cada $n$ es $O(n)$.
+    Finalmente la complejidad del algoritmo para cada $$n$$ es $$O(n)$$.
 
 * **Código en C++**
 ```c++
@@ -377,21 +377,21 @@ for _ in range(t):
 	</details>
 * **Solución:**
 	
-	La solución al problema para cada $n$ es igual a su [Número de Catalan](https://es.wikipedia.org/wiki/N%C3%BAmeros_de_Catalan): $Cat(n)$. La definición original es:
+	La solución al problema para cada $$n$$ es igual a su [Número de Catalan](https://es.wikipedia.org/wiki/N%C3%BAmeros_de_Catalan): $$Cat(n)$$. La definición original es:
 
 	$$ Cat(n) = \frac{1}{n + 1}\binom{2n}{n} $$
 
 	**Ejercicio:** Demostrar que esto es cierto.
 
-	Para una implementación más simple podemos usar la relación entre el $Cat(n)$ y $Cat(n + 1)$:
+	Para una implementación más simple podemos usar la relación entre el $$Cat(n)$$ y $$Cat(n + 1)$$:
 
 	$$ Cat(n + 1) = \frac{(2n + 2)(2n + 1)}{(n + 2)(n + 1)} Cat(n) $$
 
-	Así, podemos crear una funcion $num(n)$ que calcule $(2n + 2)(2n + 1)$, otra función $den(n)$ que calcula $(n + 2)(n + 1)$. Luego se pre-calcular todos los $cat(n)$ en un arreglo.
+	Así, podemos crear una funcion $$num(n)$$ que calcule $$(2n + 2)(2n + 1)$$, otra función $$den(n)$$ que calcula $$(n + 2)(n + 1)$$. Luego se pre-calcular todos los $$cat(n)$$ en un arreglo.
 
-	Finalmente, la complejidad del algoritmo para cada $n$ es $O(1)$, como el número de casos $t$ y $n$ son pequeños, la complejidad final sigue siendo $O(1)$ ;)
+	Finalmente, la complejidad del algoritmo para cada $$n$$ es $$O(1)$$, como el número de casos $$t$$ y $$n$$ son pequeños, la complejidad final sigue siendo $$O(1)$$ ;)
 
-	Una pequeño detalle al multiplicar $num(n)Cat(n - 1)$, éste valor general un overflow para enteros de 32 bits, por lo que es necesario considerar usar enteros de 64 bits para este processo.
+	Una pequeño detalle al multiplicar $$num(n)Cat(n - 1)$$, éste valor general un overflow para enteros de 32 bits, por lo que es necesario considerar usar enteros de 64 bits para este processo.
 
 * **Código en C++**
 ```c++
@@ -432,21 +432,21 @@ int main(){
 	</details>
 * **Solución:**
 
-	Considerando la solución de la [versión mas simple](#problema-chusky-el-aventurero-medio) de este problema se puede ver que el problema pide calcular $Cat(n)\text{ mod }(10^9 + 7)$. Podria seguir usandose la solución anterior pero la función $Cat(n)$ crece muy rápido, así, es necesario aplicar la operación $\text{ mod }(10^9 + 7)$ a medida que se van calculando los valores.
+	Considerando la solución de la [versión mas simple](#problema-chusky-el-aventurero-medio) de este problema se puede ver que el problema pide calcular $$Cat(n)\text{ mod }(10^9 + 7)$$. Podria seguir usandose la solución anterior pero la función $$Cat(n)$$ crece muy rápido, así, es necesario aplicar la operación $$\text{ mod }(10^9 + 7)$$ a medida que se van calculando los valores.
 
-	Antes de seguir es necesario recordar que la operación $\text{ mod }$ es [distributiva respecto a la suma y a la multiplicación](https://math.stackexchange.com/questions/147140/what-are-the-properties-of-the-modulus). Así, el producto de $num(n)Cat(n - 1)$ puede ser calculado evitando overflows aplicando $mod$ cada vez que sea necesario. La parte más complicada podria presentarse para el caso de $den(n)$, no es posible aplicar directamente $den(n)~\text{ mod } (10^9 + 7)$ porque esto genera resultados erroneos. Basandonos en la teoría de la aritmética modular se puede ver que es necesario calcular el **inverso modular** $inv(den(n))$.
+	Antes de seguir es necesario recordar que la operación $$\text{ mod }$$ es [distributiva respecto a la suma y a la multiplicación](https://math.stackexchange.com/questions/147140/what-are-the-properties-of-the-modulus). Así, el producto de $$num(n)Cat(n - 1)$$ puede ser calculado evitando overflows aplicando $$mod$$ cada vez que sea necesario. La parte más complicada podria presentarse para el caso de $$den(n)$$, no es posible aplicar directamente $$den(n)~\text{ mod } (10^9 + 7)$$ porque esto genera resultados erroneos. Basandonos en la teoría de la aritmética modular se puede ver que es necesario calcular el **inverso modular** $$inv(den(n))$$.
 
 	Así se reformula la equación:
 
 	$$ 	Cat(n + 1) = (num(n) inv(den(n)) Cat(n))~mod~(10^9 + 7) $$
 
-	Existen [varias formas](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/) para calcular el inverso modular, en este caso como $10^9 + 7$ es un primo, sabemos que el inverso existe y podemos hacer uso del [Pequeño Teorema de Fermat](https://es.wikipedia.org/wiki/Peque%C3%B1o_teorema_de_Fermat):
+	Existen [varias formas](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/) para calcular el inverso modular, en este caso como $$10^9 + 7$$ es un primo, sabemos que el inverso existe y podemos hacer uso del [Pequeño Teorema de Fermat](https://es.wikipedia.org/wiki/Peque%C3%B1o_teorema_de_Fermat):
 
 	$$ 	inv(den(n)) = den(n)^{(10^9 + 7) - 2}~\text{ mod }~(10^9 + 7) $$
 
-	Para calcular esta potencia es necesario usar una implementación rapida de exponeciacion que use las propiedades del $\text{ mod }$ para evitar overflows. En la solución presentada la exponeciación tiene complejidad de $O(\log (10^9 + 7)) = O(31) = O(1)$.
+	Para calcular esta potencia es necesario usar una implementación rapida de exponeciacion que use las propiedades del $$\text{ mod }$$ para evitar overflows. En la solución presentada la exponeciación tiene complejidad de $$O(\log (10^9 + 7)) = O(31) = O(1)$$.
 
-	Finalmente, podemos usar la misma idea de pre-calcular $Cat(n)$ en un arreglo, así la complejidad para cada $n$ sigue siendo $O(1)$, en este problema el caso de pruebas $t$ es significativo por lo que la complejidad final es $O(t)$.
+	Finalmente, podemos usar la misma idea de pre-calcular $$Cat(n)$$ en un arreglo, así la complejidad para cada $$n$$ sigue siendo $$O(1)$$, en este problema el caso de pruebas $$t$$ es significativo por lo que la complejidad final es $$O(t)$$.
 	
 * **Código en C++**
 ```c++
@@ -511,7 +511,7 @@ int main(){
 	
 	**Ejercicio:** Demostrar que esto es cierto.
 
-	Complejidad: $O(n\log n)$.
+	Complejidad: $$O(n\log n)$$.
 * **Código en Python**
 ```python
 # Leer cada caso de prueba
@@ -534,11 +534,11 @@ for _ in range(int(input())):
 
 	</details>
 * **Solución:**
-	Este es un problema bastante conocido llamado [Maximum subarray sum](https://en.wikipedia.org/wiki/Maximum_subarray_problem). Existen muchos algoritmos para resolverlo. El más obvio y trivial es iterar sobre cada subarreglo y calcular su suma. Luego devolver la máxima suma sobre todos los posibles sub arreglos La complejidad de esta solución es $O(n^3)$, puede ser implementada en $O(n^2)$ si se guardan las sumas acumuladas. Existe [otro algoritmo](https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/) de divide and conquer muy interesante que logra una complejidad de $O(n\log n)$. Sin embargo, la forma más eficiente de resolverlo, es un [algoritmo](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/) de programación dinámica. Este algoritmo se explica a continuación:
+	Este es un problema bastante conocido llamado [Maximum subarray sum](https://en.wikipedia.org/wiki/Maximum_subarray_problem). Existen muchos algoritmos para resolverlo. El más obvio y trivial es iterar sobre cada subarreglo y calcular su suma. Luego devolver la máxima suma sobre todos los posibles sub arreglos La complejidad de esta solución es $$O(n^3)$$, puede ser implementada en $$O(n^2)$$ si se guardan las sumas acumuladas. Existe [otro algoritmo](https://www.geeksforgeeks.org/maximum-subarray-sum-using-divide-and-conquer-algorithm/) de divide and conquer muy interesante que logra una complejidad de $$O(n\log n)$$. Sin embargo, la forma más eficiente de resolverlo, es un [algoritmo](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/) de programación dinámica. Este algoritmo se explica a continuación:
 
 
-	Para cada posición del arreglo, se deben conocer dos valores. Primero, el valor $\text{max_aqui}(i)$, que representa la máxima suma del mejor subarreglo que termina en la posición $i$. Segundo, $\text{max_total}(i)$, la solución óptima del arreglo contando hasta la posición $i$. Para calcular el primer valor, en cada posición lo actualizamos de la siguiente manera: dado que $\text{max_aqui}(i)$ requiere de $A[i]$, tomamos el máximo entre $A[i]$ y $\text{max_aqui}(i-1) + A[i]$. Finalmente, para calcular $\text{max_total}(i)$, tomamos el máximo entre $\text{max_aqui}(1), \text{max_aqui}(2), \dots, \text{max_aqui}(i-1), \text{max_aqui}(i)$. La solución al problema es $\text{max_total}(n)$.
-	Complejidad: $O(n)$.
+	Para cada posición del arreglo, se deben conocer dos valores. Primero, el valor $$\text{max_aqui}(i)$$, que representa la máxima suma del mejor subarreglo que termina en la posición $$i$$. Segundo, $$\text{max_total}(i)$$, la solución óptima del arreglo contando hasta la posición $$i$$. Para calcular el primer valor, en cada posición lo actualizamos de la siguiente manera: dado que $$\text{max_aqui}(i)$$ requiere de $$A[i]$$, tomamos el máximo entre $$A[i]$$ y $$\text{max_aqui}(i-1) + A[i]$$. Finalmente, para calcular $$\text{max_total}(i)$$, tomamos el máximo entre $$\text{max_aqui}(1), \text{max_aqui}(2), \dots, \text{max_aqui}(i-1), \text{max_aqui}(i)$$. La solución al problema es $$\text{max_total}(n)$$.
+	Complejidad: $$O(n)$$.
 * **Código en Python**
 ```python
 # Leer cada caso de prueba
