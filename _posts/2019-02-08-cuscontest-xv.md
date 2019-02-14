@@ -9,7 +9,7 @@ tags: [cuscontest]
 
 ## Problemset
 
-<iframe src="https://app.box.com/embed/s/hqfxbkesf1gn5vqhsukna3ac72a9j5hx?sortColumn=date&view=list" width="730" height="670" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+<iframe src="https://app.box.com/embed/s/yuipgijnb06o6g789deu8grve0du4k70?sortColumn=date&view=list" width="730" height="670" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 1. [Problema A. Noé y la barca](#problema-a-noé-y-la-barca)
 2. [Problema B. La travesía de Jarencio](#problema-b-la-travesía-de-jarencio)
@@ -85,7 +85,7 @@ for ith_caso in range(1, 1 + num_casos):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	<iframe src="https://app.box.com/embed/s/wmkwe7bh8xzijuxlkpshtyitawcnt255?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+	<iframe src="https://app.box.com/embed/s/58fxy8xmlx0l80v2g3lgoeotfr8inqo4?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
