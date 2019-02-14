@@ -9,7 +9,12 @@ tags: [cuscontest]
 
 ## Problemset
 
-<iframe src="https://app.box.com/embed/s/yuipgijnb06o6g789deu8grve0du4k70?sortColumn=date&view=list" width="730" height="670" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+* <details>
+	<summary><b>Clic para ver el problemset completo.</b></summary>
+
+	<iframe src="https://app.box.com/embed/s/yuipgijnb06o6g789deu8grve0du4k70?sortColumn=date&view=list" width="730" height="670" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+	</details>
 
 1. [Problema A. Noé y la barca](#problema-a-noé-y-la-barca)
 2. [Problema B. La travesía de Jarencio](#problema-b-la-travesía-de-jarencio)
