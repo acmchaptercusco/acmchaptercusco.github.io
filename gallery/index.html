@@ -1,0 +1,219 @@
+---
+layout: page
+title: Galeria de fotos
+events:
+  - name: 'CusContestXV'
+    url-main: 'cuscontest-xv'
+    short-description: 'Concurso de Programacion' 
+    url-main-photo: 'https://raw.githubusercontent.com/acmchaptercusco/CusContestXV/master/thumbnails/DSC_0025.jpg'
+    url-thumbnails: 'https://api.github.com/repos/acmchaptercusco/CusContestXV/contents/thumbnails'
+    url-fullsize: 'https://api.github.com/repos/acmchaptercusco/CusContestXV/contents/fullsize'
+  - name: 'Machine Learning Seminar'
+    url-main: 'ml-seminar'
+    short-description: 'Primer seminario de Machine Learning' 
+    url-main-photo: 'https://raw.githubusercontent.com/acmchaptercusco/ml-seminar-2019/master/thumbnails/notebook-seminar.jpg'
+    url-thumbnails: 'https://api.github.com/repos/acmchaptercusco/ml-seminar-2019/contents/thumbnails'
+    url-fullsize: 'https://api.github.com/repos/acmchaptercusco/ml-seminar-2019/contents/fullsize'
+---
+
+<style>
+body {
+  background: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.Grid {
+  width: 100%;
+  margin: 5rem auto;
+}
+.Grid-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.Card {
+  position: relative;
+  flex: 0 1 35rem;
+  background-color: #fff;
+  padding-bottom: 5rem;
+  transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+  color: #000;
+}
+.Card-thumb {
+  position: relative;
+  width: 35rem;
+  height: 30rem;
+  -webkit-perspective-origin: 50% 0%;
+          perspective-origin: 50% 0%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  z-index: 1;
+}
+.Card-image {
+  position: absolute;
+  display: block;
+  width: 35rem;
+  height: 30rem;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card-image {
+  position: relative;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #607d8b;
+}
+.Card-image::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #3f51b5;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.Card-title,
+.Card-explore {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  transition: all 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
+}
+.Card-title span,
+.Card-explore span {
+  padding: 0.5rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+.Card-explore {
+  opacity: 0;
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #673ab7;
+}
+.Card-button {
+  position: absolute;
+  left: 50%;
+  top: 15rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  border: 2px solid #3f51b5;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  -webkit-transform: translate(-50%, 2rem);
+          transform: translate(-50%, 2rem);
+  cursor: pointer;
+  transition: all 0.2s;
+  opacity: 0;
+  outline: none;
+  z-index: 4;
+}
+.Card:hover,
+.Card--active {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.Card:hover .Card-thumb,
+.Card--active .Card-thumb {
+  z-index: 3;
+}
+.Card:hover .Card-title,
+.Card--active .Card-title {
+  opacity: 0;
+}
+.Card:hover .Card-explore,
+.Card--active .Card-explore {
+  opacity: 1;
+  -webkit-transform: translate(0, 1rem);
+          transform: translate(0, 1rem);
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1) 0.1s;
+}
+.Card:hover .Card-image,
+.Card--active .Card-image {
+  -webkit-transform: scale(1.05) translate(0, -1rem) rotateX(25deg);
+          transform: scale(1.05) translate(0, -1rem) rotateX(25deg);
+}
+.Card:hover .Card-image::before,
+.Card--active .Card-image::before {
+  opacity: 0.4;
+}
+.Card:hover .Card-button,
+.Card--active .Card-button {
+  opacity: 1;
+  color: #3f51b5;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.Card:hover .Card-button:hover,
+.Card--active .Card-button:hover {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.Card--active,
+.Card--active:hover {
+  background: none;
+}
+.Card--active .Card-explore,
+.Card--active:hover .Card-explore {
+  opacity: 0;
+  -webkit-transform: translate(0, 3rem);
+          transform: translate(0, 3rem);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.Card--active .Card-image,
+.Card--active:hover .Card-image {
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: scale(1.05) translate(0, -2.5rem) rotateX(50deg);
+          transform: scale(1.05) translate(0, -2.5rem) rotateX(50deg);
+}
+.Card--active .Card-image::before,
+.Card--active:hover .Card-image::before {
+  opacity: 0.4;
+}
+.Card--active .Card-button,
+.Card--active:hover .Card-button {
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transform: translate(-50%, -2rem) scale(1, 0.4);
+          transform: translate(-50%, -2rem) scale(1, 0.4);
+}
+</style>
+
+<section class="Grid">
+  {% for event in page.events %}
+
+  {% assign idx = forloop.index0 | modulo: 2 %}
+  {% if idx == 0 %}
+  <div class="Grid-row">
+  {% endif %}
+
+  <a class="Card" onClick="location.href='{{ event.url-main }}';">
+      <div class="Card-thumb">
+        <div class="Card-image" style="background-image: url( {{ event.url-main-photo }} );"></div>
+      </div>
+      <div class="Card-title"><span> {{ event.name }} </span></div>
+      <div class="Card-explore"><span> {{ event.short-description }} </span></div>
+      <button class="Card-button">ver mas</button>
+  </a>
+
+  {% if idx == 1 %}
+  </div>
+  {% endif %}
+
+  {% endfor %}
+
+  {% if idx != 1 %}
+  </div>
+  {% endif %}
+</section>
