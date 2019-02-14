@@ -14,6 +14,8 @@ tags: [cuscontest]
 
 ## Problemset
 
+<iframe src="https://app.box.com/embed/s/hqfxbkesf1gn5vqhsukna3ac72a9j5hx?sortColumn=date&view=list" width="730" height="670" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
 1. [Problema A. Noé y la barca](#problema-a-noé-y-la-barca)
 2. [Problema B. La travesía de Jarencio](#problema-b-la-travesía-de-jarencio)
 3. [Problema C. El último rey](#problema-c-el-último-rey)
@@ -32,7 +34,7 @@ tags: [cuscontest]
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/kkc8qs0hsrhfwkw8ogkagpqo9z88q2x3?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -67,7 +69,7 @@ for ith_caso in range(1, 1 + num_casos):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/569pwk1mln6h2skpx9g5ml2hflakmwe9?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -88,7 +90,7 @@ for ith_caso in range(1, 1 + num_casos):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/wmkwe7bh8xzijuxlkpshtyitawcnt255?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -133,7 +135,7 @@ for ith_caso in range(1, 1 + num_casos):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/tdzg6y7vs1d3tx78u8n7805mvrlmxhdl?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -165,7 +167,7 @@ for _ in range(t):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/22culy87vu6wlklryaa0vwfagmk2s52o?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -241,7 +243,7 @@ int main(){
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/y00g4m3opda744uolp0bfqfpompsqtz2?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -278,7 +280,7 @@ for _ in range(n):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Descripción
+	<iframe src="https://app.box.com/embed/s/u9rvpxj7bynu4caj4nkfwtnuf0e923mk?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 
 	</details>
@@ -339,7 +341,7 @@ int main(){
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/qt6gkw3a5od18091dwt18rhh984jbd0z?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -371,7 +373,7 @@ for _ in range(t):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Descripción
+	<iframe src="https://app.box.com/embed/s/lsfo1llq133ccejjjsng8293yzf1o50f?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 
 	</details>
@@ -471,7 +473,7 @@ int main(){
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Dscripción
+	<iframe src="https://app.box.com/embed/s/1e8x989egmwzhodsaznowbha9aadixkj?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -547,7 +549,7 @@ int main(){
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/nhtlmp8no0bwyzzii1jfvu7pqei5ll0k?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
@@ -574,7 +576,7 @@ for _ in range(int(input())):
 * <details>
 	<summary>Descripción del Problema (clic para ver)</summary>
 
-	Aquí va la descripción del problema
+	<iframe src="https://app.box.com/embed/s/ka7ecj6axcplpa24ilvxeyk4vexd4xgl?sortColumn=date&view=list" width="730" height="470" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 	</details>
 * **Solución:**
