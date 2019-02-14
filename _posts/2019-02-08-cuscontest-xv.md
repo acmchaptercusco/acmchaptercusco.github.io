@@ -3,14 +3,9 @@ layout: post
 title: CusContest XV
 subtitle: 8 DE FEBRERO
 bigimg: /img/banner-cuscontest.png
+image: /img/CCXV-bold.jpg
 tags: [cuscontest]
 ---
-
-## Scoreboard (próximamente)
-* General
-* Principiantes
-* Intermedios
-* Avanzados
 
 ## Problemset
 
